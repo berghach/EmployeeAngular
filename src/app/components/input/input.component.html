@@ -2,12 +2,13 @@
     <label [for]="id">{{label}}</label>
     <input 
         [id]="id"
-        [name]="name"
+        formControlName="formControlName"
         [type]="type"
         [placeholder]="placeholder"
         [value]="value"
         [disabled]="disabled"
         (input)="onInputChange($event)"
+        (blur)="onTouched()"
         [attr.max]="max"
         [attr.min]="min"
         autocomplete="on"

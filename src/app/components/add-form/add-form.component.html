@@ -1,37 +1,39 @@
 <app-form 
-    title="Add Employee">
+    title="Add Employee"
+    [formGroup]="employeeForm"
+    (onSubmit)="onSubmit()">
     <app-input
         label="First Name"
-        id="firstname"
-        name="first-name"
+        id="firstName"
+        formControlName="firstName"
         type="text"
         placeholder="John"
         />
     <app-input
         label="Last Name"
-        id="lastname"
-        name="last-name"
+        id="lastName"
+        formControlName="lastName"
         type="text"
         placeholder="Doe"
         />
     <app-input
         label="Email"
-        id="emailname"
-        name="email-name"
+        id="email"
+        formControlName="email"
         type="text"
         placeholder="john.doe@mail.com"
         />
     <app-input
         label="Job"
         id="job"
-        name="_job"
+        formControlName="job"
         type="text"
         placeholder="Saler"
         />
     <app-input
         label="Hiring Date"
-        id="hiringdate"
-        name="hiring-date"
+        id="hiringDate"
+        formControlName="hiringDate"
         type="date"
         />
     <app-button>Submit</app-button>

@@ -4,6 +4,8 @@ import { AddFormComponent } from '../../components/add-form/add-form.component';
 import { FormComponent } from '../../components/form/form.component';
 import { InputComponent } from '../../components/input/input.component';
 import { ButtonComponent } from '../../components/button/button.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from '../../app.component';
 
 
 
@@ -13,8 +15,11 @@ import { ButtonComponent } from '../../components/button/button.component';
     CommonModule, 
     FormComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  exports: [AddFormComponent]
+  exports: [AddFormComponent],
+  bootstrap: [AppComponent]
 })
 export class EmployeeModule { }
