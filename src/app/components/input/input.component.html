@@ -1,13 +1,15 @@
-
-<label *ngIf="id" [for]="id">{{label}}</label>
-<input 
-    [id]="id"
-    [name]="name"
-    [type]="type"
-    [placeholder]="placeholder"
-    [value]="value"
-    [disabled]="disabled"
-    (input)="onInputChange($event)"
-    [attr.max]="max"
-    [attr.min]="min"
-/>
+<div class="coolinput">
+    <label [for]="id">{{label}}</label>
+    <input 
+        [id]="id"
+        [name]="name"
+        [type]="type"
+        [placeholder]="placeholder"
+        [value]="value"
+        [disabled]="disabled"
+        (input)="onInputChange($event)"
+        [attr.max]="max"
+        [attr.min]="min"
+        autocomplete="on"
+    />
+</div>
