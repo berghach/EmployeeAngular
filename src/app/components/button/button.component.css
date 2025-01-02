@@ -1,0 +1,19 @@
+.coolbutton {
+    max-width: 100%;
+}
+
+.coolbutton button {
+    width: 100%;
+    padding: 11px 10px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background: #818CF8;
+    border: none;
+}
+
+.coolbutton button:hover {
+    background: #fff;
+    color: #818CF8;
+    border: 2px #818CF8 solid;
+}

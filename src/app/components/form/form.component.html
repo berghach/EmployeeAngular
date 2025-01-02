@@ -1,3 +1,6 @@
-<form action="">
-    <ng-content></ng-content>
-</form>
+<div class="form-container">
+    <p class="title">{{title}}</p>
+    <form [action]="action" [method]="method">
+        <ng-content></ng-content>
+    </form>
+</div>
